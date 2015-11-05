@@ -19,8 +19,9 @@ development:
   encoding: unicode
   database: stukbook_development
   pool: 5
-  username: stukbook
-  password:
+  username: postgres
+  password: password
+  host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -48,13 +49,15 @@ test:
   encoding: unicode
   database: stukbook_test
   pool: 5
-  username: stukbook
-  password:
+  username: postgres
+  password: password
+  host: localhost
 
 production:
   adapter: postgresql
   encoding: unicode
   database: stukbook_production
   pool: 5
-  username: stukbook
-  password:
+  username: postgres
+  password: password
+  host: localhost
